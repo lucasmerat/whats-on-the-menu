@@ -1,0 +1,12 @@
+<h2>This week's meals</h2>
+<ul>
+  {{#each @recipes as |recipe|}}
+    <input type="checkbox" value={{recipe.completed}}>
+    <li>{{recipe.name}}</li>
+    <a href={{concat 'https://' recipe.link}} target='_blank'>See recipe</a>
+    <span>Type = {{recipe.mealType}}</span>
+  {{/each}}
+</ul>
+
+
+
