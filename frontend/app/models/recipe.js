@@ -4,6 +4,7 @@ export default class RecipeModel extends Model {
   @attr name;
   @attr link;
   @attr mealType;
+  @attr completed;
 
   @hasMany('ingredient') ingredients;
 }

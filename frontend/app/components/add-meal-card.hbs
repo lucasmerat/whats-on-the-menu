@@ -1,0 +1,14 @@
+<form {{on "submit" (perform this.saveRecipe)}}>
+  <label for="name">Name</label>
+  <input type="text" value={{this.name}} {{on "change" this.changeName}} />
+  <label for="name">Meal Type</label>
+  <select name="mealtype" value={{this.mealType}} {{on "change" this.changeMealType}}>
+    <option value="breakfast">Breakfast</option>
+    <option value="lunch">Lunch</option>
+    <option value="dinner">Dinner</option>
+    <option value="dessert">Dessert</option>
+  </select>
+  <label for="name">Link</label>
+  <input type="text" value={{this.link}} {{on "change" this.changeLink}} />
+  <button type="submit">Save recipe</button>
+</form>

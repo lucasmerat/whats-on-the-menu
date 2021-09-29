@@ -1,0 +1,5 @@
+{{log @recipe.completed}}
+<input type="checkbox" checked={{@recipe.completed}} {{on "change" (perform this.toggleCompleted)}}>
+  <li>{{@recipe.name}}</li>
+  <a href={{concat 'https://' @recipe.link}} target='_blank' rel="noopener noreferrer">See recipe</a>
+<span>Type = {{@recipe.mealType}}</span>
